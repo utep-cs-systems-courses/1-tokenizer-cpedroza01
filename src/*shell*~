@@ -1,0 +1,609 @@
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘word_start’:
+tokenizer.c:21:14: warning: return makes pointer from integer without a cast [-Wint-conversion]
+       return *str;
+              ^~~~
+tokenizer.c:23:14: warning: return makes pointer from integer without a cast [-Wint-conversion]
+       return *str;
+              ^~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘word_start’:
+tokenizer.c:21:14: warning: return makes pointer from integer without a cast [-Wint-conversion]
+       return *str;
+              ^~~~
+tokenizer.c:23:14: warning: return makes pointer from integer without a cast [-Wint-conversion]
+       return *str;
+              ^~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+make: Nothing to be done for 'all'.
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+
+@
+1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘count_words’:
+tokenizer.c:43:15: warning: passing argument 1 of ‘strlen’ makes pointer from integer without a cast [-Wint-conversion]
+     if(strlen(*str) == 0){
+               ^
+In file included from tokenizer.c:1:0:
+/usr/include/string.h:384:15: note: expected ‘const char *’ but argument is of type ‘char’
+ extern size_t strlen (const char *__s)
+               ^~~~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+
+@
+1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hello world
+hello world
+2
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+
+@
+1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘copy_str’:
+tokenizer.c:68:13: error: expected ‘;’ before ‘{’ token
+   } while(c){
+             ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hello
+hello
+1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:14:41: error: expected ‘)’ before ‘;’ token
+  copy = &(copy_str(inStr, sizeof(inStr));
+                                         ^
+uimain.c:14:9: error: lvalue required as unary ‘&’ operand
+  copy = &(copy_str(inStr, sizeof(inStr));
+         ^
+uimain.c:15:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:14:9: error: lvalue required as unary ‘&’ operand
+  copy = &(copy_str(inStr, sizeof(inStr)));
+         ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hello world
+hello world
+2
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hellow world
+hellow world
+2
+hellow world
+)student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hello world
+hello world
+2
+hello world
+)student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:10: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  *tokens = tokenize(inStr);
+          ^
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘next_word’:
+tokenizer.c:34:14: error: expected ‘)’ before ‘!’ token
+   while(*str ! = '\0'){
+              ^
+tokenizer.c:35:8: warning: implicit declaration of function ‘non_space_character’; did you mean ‘non_space_char’? [-Wimplicit-function-declaration]
+     if(non_space_character(*str){
+        ^~~~~~~~~~~~~~~~~~~
+        non_space_char
+tokenizer.c:35:33: error: expected ‘)’ before ‘{’ token
+     if(non_space_character(*str){
+                                 ^
+tokenizer.c:42:7: error: expected expression before ‘}’ token
+       }
+       ^
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:46:25: error: expected ‘)’ before ‘{’ token
+     if(space_char(*word){
+                         ^
+tokenizer.c:51:1: error: expected expression before ‘}’ token
+ }
+ ^
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:86:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:89:30: warning: passing argument 1 of ‘word_start’ makes pointer from integer without a cast [-Wint-conversion]
+     char *start = word_start(*str);
+                              ^
+tokenizer.c:18:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *word_start(char *str){
+       ^~~~~~~~~~
+tokenizer.c:92:30: warning: passing argument 1 of ‘word_terminator’ makes pointer from integer without a cast [-Wint-conversion]
+       copy = word_terminator(*copy);
+                              ^
+tokenizer.c:44:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *word_terminator(char *word){
+       ^~~~~~~~~~~~~~~
+tokenizer.c:94:27: warning: passing argument 1 of ‘copy_str’ makes pointer from integer without a cast [-Wint-conversion]
+       **tokens = copy_str(*str, len);
+                           ^
+tokenizer.c:74:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *copy_str(char *inStr, short len){
+       ^~~~~~~~
+tokenizer.c:95:13: error: lvalue required as increment operand
+       tokens++;
+             ^~
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:98:1: error: expected declaration or statement at end of input
+ }
+ ^
+tokenizer.c: In function ‘next_word’:
+tokenizer.c:98:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:33:25: error: expected ‘)’ before ‘{’ token
+     if(space_char(*word){
+                         ^
+tokenizer.c:38:1: error: expected expression before ‘}’ token
+ }
+ ^
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:73:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:76:30: warning: passing argument 1 of ‘word_start’ makes pointer from integer without a cast [-Wint-conversion]
+     char *start = word_start(*str);
+                              ^
+tokenizer.c:18:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *word_start(char *str){
+       ^~~~~~~~~~
+tokenizer.c:79:30: warning: passing argument 1 of ‘word_terminator’ makes pointer from integer without a cast [-Wint-conversion]
+       copy = word_terminator(*copy);
+                              ^
+tokenizer.c:31:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *word_terminator(char *word){
+       ^~~~~~~~~~~~~~~
+tokenizer.c:81:27: warning: passing argument 1 of ‘copy_str’ makes pointer from integer without a cast [-Wint-conversion]
+       **tokens = copy_str(*str, len);
+                           ^
+tokenizer.c:61:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *copy_str(char *inStr, short len){
+       ^~~~~~~~
+tokenizer.c:82:13: error: lvalue required as increment operand
+       tokens++;
+             ^~
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:85:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:73:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:81:27: warning: passing argument 1 of ‘copy_str’ makes pointer from integer without a cast [-Wint-conversion]
+       **tokens = copy_str(*str, len);
+                           ^
+tokenizer.c:61:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *copy_str(char *inStr, short len){
+       ^~~~~~~~
+tokenizer.c:82:13: error: lvalue required as increment operand
+       tokens++;
+             ^~
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:85:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:73:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:85:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:73:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:85:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return tokens;
+          ^~~~~~
+tokenizer.c:85:10: warning: function returns address of local variable [-Wreturn-local-addr]
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:86:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:73:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:85:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return **tokens;
+          ^~~~~~~~
+tokenizer.c: In function ‘word_terminator’:
+tokenizer.c:86:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:74:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(*str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:86:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return **tokens;
+          ^~~~~~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tokenizer.o: in function `tokenize':
+/home/student/1-tokenizer-cpedroza01/src/tokenizer.c:74: undefined reference to `word_count'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:13: tokenizer] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:74:17: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   char **tokens[word_count(str)];
+                 ^~~~~~~~~~
+                 word_start
+tokenizer.c:86:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return **tokens;
+          ^~~~~~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tokenizer.o: in function `tokenize':
+/home/student/1-tokenizer-cpedroza01/src/tokenizer.c:74: undefined reference to `word_count'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:13: tokenizer] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:74:15: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   int count = word_count(str);
+               ^~~~~~~~~~
+               word_start
+tokenizer.c:87:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return **tokens;
+          ^~~~~~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tokenizer.o: in function `tokenize':
+/home/student/1-tokenizer-cpedroza01/src/tokenizer.c:74: undefined reference to `word_count'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:13: tokenizer] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:74:15: warning: implicit declaration of function ‘word_count’; did you mean ‘word_start’? [-Wimplicit-function-declaration]
+   int count = word_count(str);
+               ^~~~~~~~~~
+               word_start
+tokenizer.c:87:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return tokens;
+          ^~~~~~
+tokenizer.c:87:10: warning: function returns address of local variable [-Wreturn-local-addr]
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: tokenizer.o: in function `tokenize':
+/home/student/1-tokenizer-cpedroza01/src/tokenizer.c:74: undefined reference to `word_count'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:13: tokenizer] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:87:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return tokens;
+          ^~~~~~
+tokenizer.c:87:10: warning: function returns address of local variable [-Wreturn-local-addr]
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+make: Nothing to be done for 'all'.
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hello world
+hello world
+2
+hello world
+Segmentation fault (core dumped)
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:9: error: assignment to expression with array type
+  tokens = tokenize(inStr);
+         ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:9: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  tokens = tokenize(inStr);
+         ^
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:10: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  *tokens = tokenize(inStr);
+          ^
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘tokens’
+    tokens = &(tokenize(inStr));
+    ^~~~~~
+uimain.c:18:4: error: ‘tokens’ undeclared (first use in this function); did you mean ‘tokenize’?
+    tokens = &(tokenize(inStr));
+    ^~~~~~
+    tokenize
+uimain.c:18:4: note: each undeclared identifier is reported only once for each function it appears in
+uimain.c:18:13: error: lvalue required as unary ‘&’ operand
+    tokens = &(tokenize(inStr));
+             ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:11: error: lvalue required as unary ‘&’ operand
+  tokens = &(tokenize(inStr));
+           ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:11: error: lvalue required as unary ‘&’ operand
+  tokens = &(tokenize(inStr));
+           ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:11: error: lvalue required as unary ‘&’ operand
+  tokens = &(tokenize(inStr));
+           ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:11: error: lvalue required as unary ‘&’ operand
+  tokens = &(tokenize(inStr));
+           ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:18:12: error: lvalue required as unary ‘&’ operand
+  *tokens = &(tokenize(inStr));
+            ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:87:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return **tokens;
+          ^~~~~~~~
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:91:19: error: ‘null’ undeclared (first use in this function)
+   while(tokens != null){
+                   ^~~~
+tokenizer.c:91:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:87:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return **tokens;
+          ^~~~~~~~
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hellow world
+hellow world
+2
+hellow world
+Segmentation fault (core dumped)
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘tokenize’:
+tokenizer.c:87:10: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+   return tokens;
+          ^~~~~~
+tokenizer.c:87:10: warning: function returns address of local variable [-Wreturn-local-addr]
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:91:19: error: expected ‘;’ before ‘)’ token
+   for(*tokens != 0){
+                   ^
+tokenizer.c:91:19: error: expected expression before ‘)’ token
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(*tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:91:15: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+   for(*tokens != '\0'){
+               ^~
+tokenizer.c:91:7: note: did you mean to dereference the pointer?
+   for(*tokens != '\0'){
+       ^
+tokenizer.c:91:22: error: expected ‘;’ before ‘)’ token
+   for(*tokens != '\0'){
+                      ^
+tokenizer.c:91:22: error: expected expression before ‘)’ token
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(*tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:91:18: error: expected ‘;’ before ‘)’ token
+   for(tokens != 0){
+                  ^
+tokenizer.c:91:18: error: expected expression before ‘)’ token
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(*tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(*tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:92:30: warning: passing argument 1 of ‘copy_str’ makes pointer from integer without a cast [-Wint-conversion]
+     char copy[20] = copy_str(**tokens, sizeof(*tokens));
+                              ^
+tokenizer.c:62:7: note: expected ‘char *’ but argument is of type ‘char’
+ char *copy_str(char *inStr, short len){
+       ^~~~~~~~
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(**tokens, sizeof(*tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(tokens));
+                     ^~~~~~~~
+tokenizer.c: At top level:
+tokenizer.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:92:21: error: invalid initializer
+     char copy[20] = copy_str(*tokens, sizeof(tokens));
+                     ^~~~~~~~
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+tokenizer.c: In function ‘print_tokens’:
+tokenizer.c:92:23: error: ‘token’ undeclared (first use in this function); did you mean ‘tokens’?
+     printf("%[^\n]s", token);
+                       ^~~~~
+                       tokens
+tokenizer.c:92:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: tokenizer.o] Error 1
+student@systems-vm:~/1-tokenizer-cpedroza01/src> make
+cc -g -O3   -c -o tokenizer.o tokenizer.c
+cc -o tokenizer -g -O3 uimain.o tokenizer.o
+student@systems-vm:~/1-tokenizer-cpedroza01/src> ./tokenizer 
+Please input your string:
+hello world
+hello world
+2
+hello world
+Segmentation fault (core dumped)
+student@systems-vm:~/1-tokenizer-cpedroza01/src> 
